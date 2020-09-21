@@ -15,6 +15,8 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
+  WIN_COMBINATIONS.detect do |winner|
+    
 end
 
 def full?(board)
@@ -28,7 +30,10 @@ def draw?(board)
 end
 
 def over?(board)
-  won?(board) || full?(board) || draw?(board)
+  if won?(board) || full?(board) || draw?(board)
+    true
+  end
 end
 
-# Define your WIN_COMBINATIONS constant
+def winner(board)
+end
